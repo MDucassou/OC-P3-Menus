@@ -1,0 +1,17 @@
+.next__bouton{
+    display :block;
+    height: 100%;
+    width: 150px;
+    margin: auto;
+    background-color: $enseigne-color__fond;
+    text-align: center;
+    color: $enseigne-color__texte;
+    padding: 10px 40px 10px 40px;
+    border-radius: 10px;
+    font-family: $enseigne-font__texte;
+    font-size: 1.3em;
+    text-decoration: none;
+    &:hover{
+        cursor: pointer;
+        }
+}

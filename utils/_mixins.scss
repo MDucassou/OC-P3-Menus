@@ -1,0 +1,10 @@
+@mixin shadow{
+    box-shadow: 0 0 10px #c8c8c8;
+}
+
+@mixin gradient ($angle, $color1, $color2,) {
+    background: -webkit-linear-gradient($angle, $color1, $color2);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}

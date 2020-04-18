@@ -1,0 +1,73 @@
+@font-face{
+    font-family:'montserrat';
+    src: url('fonts/Montserrat/Montserrat-bold.ttf') format('ttf');
+}
+@font-face{
+    font-family:'roboto';
+    src: url('fonts/Roboto/Roboto-Regular.ttf') format('ttf');
+}
+@font-face{
+    font-family: 'devonshire';
+    src: url("fonts/Devonshire-FontZillion/devonshire-regular.ttf");
+}
+@font-face{
+    font-family: 'croissant';
+    src: url("fonts/Croissant-One-FontZillion/croissantone-regular.ttf");
+}
+@font-face{
+    font-family: 'schola';
+    src: url("fonts/TeXGyreSchola-FontZillion/texgyreschola-regular.otf");
+}
+@font-face{
+    font-family: 'dancing';
+    src: url("fonts/Dancing_Script/DancingScript-Regular.ttf");
+}
+@font-face{
+    font-family: 'segoe';
+    src: url("fonts/Segoe-print/SegoePrint.ttf");
+}
+@font-face{
+    font-family: 'kaushan';
+    src: url("fonts/Kaushan-Script-FontZillion/kaushanscript-regular.ttf");
+}
+
+
+
+/*enseigne*/
+$enseigne-color__fond: #569c87;
+$enseigne-color__texte: #fdca45;
+$enseigne-font__titre: Arial;
+$enseigne-font__texte: Arial, Sans;
+/*polices*/
+
+/*menu1*/
+$menu1-color__fond: #fcdeda;
+$menu1-color__texte1: #3d1318;
+$menu1-color__texte2: #3d1318;
+$menu1-font__titre: 'devonshire';
+$menu1-font__texte: 'segoe';
+$menu1-gradient__angle: 0deg;
+
+/*menu2*/
+$menu2-color__fond: #fff5fe;
+$menu2-color__texte1: #c67411;
+$menu2-color__texte2: #8f5afe;
+$menu2-font__titre: 'croissant';
+$menu2-font__texte: 'schola';
+$menu2-gradient__angle: 290deg;
+
+/*menu3*/
+$menu3-color__fond: #fff5fe;
+$menu3-color__texte1: #0128dd;
+$menu3-color__texte2: #5caefa;
+$menu3-font__titre: 'dancing';
+$menu3-font__texte: 'segoe';
+$menu3-gradient__angle: 290deg;
+
+/*menu4*/
+$menu4-color__fond: #f9f9f9;
+$menu4-color__texte1: #3d9239;
+$menu4-color__texte2: #daffb5;
+$menu4-font__titre: 'kaushan';
+$menu4-font__texte: 'segoe';
+$menu4-gradient__angle: 290deg;

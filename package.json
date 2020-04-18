@@ -1,0 +1,11 @@
+{
+  "name": "livrables",
+  "version": "1.0.0",
+  "description": "Projet3 Formation OC - Menus",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./style.scss:./style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

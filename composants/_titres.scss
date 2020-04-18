@@ -1,0 +1,18 @@
+a{
+    text-decoration: none;
+}
+
+h1{
+    background-color: $enseigne-color__fond;
+    color: $enseigne-color__texte;
+    font-family: $enseigne-font__titre;
+    font-weight: 700;
+    font-size: 3em;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin: 0;
+    &:hover{
+        cursor: pointer;
+    }
+}

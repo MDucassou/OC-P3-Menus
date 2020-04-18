@@ -1,0 +1,10 @@
+html{
+    background-color: #eaeaea;
+}
+
+body{
+    background-color: white;
+    width: 70%;
+    margin: auto;
+    @include shadow;
+}

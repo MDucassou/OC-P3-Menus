@@ -1,0 +1,271 @@
+@font-face {
+  font-family: "montserrat";
+  src: url("fonts/Montserrat/Montserrat-bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "roboto";
+  src: url("fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "devonshire";
+  src: url("fonts/Devonshire-FontZillion/devonshire-regular.ttf");
+}
+@font-face {
+  font-family: "croissant";
+  src: url("fonts/Croissant-One-FontZillion/croissantone-regular.ttf");
+}
+@font-face {
+  font-family: "schola";
+  src: url("fonts/TeXGyreSchola-FontZillion/texgyreschola-regular.otf");
+}
+@font-face {
+  font-family: "dancing";
+  src: url("fonts/Dancing_Script/DancingScript-Regular.ttf");
+}
+@font-face {
+  font-family: "segoe";
+  src: url("fonts/Segoe-print/SegoePrint.ttf");
+}
+@font-face {
+  font-family: "kaushan";
+  src: url("fonts/Kaushan-Script-FontZillion/kaushanscript-regular.ttf");
+}
+/*enseigne*/
+/*polices*/
+/*menu1*/
+/*menu2*/
+/*menu3*/
+/*menu4*/
+a {
+  text-decoration: none;
+}
+
+h1 {
+  background-color: #569c87;
+  color: #fdca45;
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 3em;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  margin: 0;
+}
+h1:hover {
+  cursor: pointer;
+}
+
+.next__bouton {
+  display: block;
+  height: 100%;
+  width: 150px;
+  margin: auto;
+  background-color: #569c87;
+  text-align: center;
+  color: #fdca45;
+  padding: 10px 40px 10px 40px;
+  border-radius: 10px;
+  font-family: Arial, Sans;
+  font-size: 1.3em;
+  text-decoration: none;
+}
+.next__bouton:hover {
+  cursor: pointer;
+}
+
+html {
+  background-color: #eaeaea;
+}
+
+body {
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  box-shadow: 0 0 10px #c8c8c8;
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #569c87;
+  padding: 20px;
+  margin: 30px 0 0 0;
+}
+.main-footer > a {
+  color: #fdca45;
+  font-family: Arial, Sans;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.accueil-prev {
+  margin-bottom: 10px;
+}
+
+.accueil-prev__ligne {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.accueil-prev__carte {
+  box-shadow: 0 0 10px #c8c8c8;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  width: 250px;
+  height: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.accueil-prev__carte:hover {
+  cursor: pointer;
+}
+
+.accueil-prev__carte--menu1 {
+  background-color: #fcdeda;
+}
+.accueil-prev__carte--menu1 h2 {
+  font-size: 1.7em;
+  font-family: "devonshire";
+  font-weight: 500;
+  background: -webkit-linear-gradient(0deg, #3d1318, #3d1318);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.accueil-prev__carte--menu1 p {
+  font-size: 2em;
+  font-family: "segoe";
+  color: #3d1318;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.accueil-prev__carte--menu2 {
+  background-color: #fff5fe;
+}
+.accueil-prev__carte--menu2 h2 {
+  font-size: 1.2em;
+  font-family: "croissant";
+  background: -webkit-linear-gradient(290deg, #c67411, #8f5afe);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.accueil-prev__carte--menu2 p {
+  font-size: 2em;
+  font-family: "schola";
+  color: #c67411;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.accueil-prev__carte--menu3 {
+  background-color: #fff5fe;
+}
+.accueil-prev__carte--menu3 h2 {
+  font-size: 1.5em;
+  font-family: "dancing";
+  background: -webkit-linear-gradient(290deg, #0128dd, #5caefa);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.accueil-prev__carte--menu3 p {
+  font-size: 2em;
+  font-family: "segoe";
+  color: #5caefa;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.accueil-prev__carte--menu4 {
+  background-color: #f9f9f9;
+}
+.accueil-prev__carte--menu4 h2 {
+  font-size: 1.4em;
+  font-family: "kaushan";
+  background: -webkit-linear-gradient(290deg, #3d9239, #daffb5);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.accueil-prev__carte--menu4 p {
+  font-size: 2em;
+  font-family: "segoe";
+  color: #3d9239;
+  font-weight: 700;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.menu-carte__header {
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-carte {
+  margin: 20px 5% 20px 5%;
+  padding: 40px;
+}
+.menu-carte footer {
+  text-align: center;
+}
+
+.menu-carte--menu1 {
+  font-family: "segoe";
+  color: #3d1318;
+  background-color: #fcdeda;
+}
+.menu-carte--menu1 footer h3 {
+  font-family: "devonshire";
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.menu-carte__titre h3 {
+  text-align: center;
+  font-family: "devonshire";
+  font-size: 2em;
+  font-weight: 500;
+  margin: 0;
+}
+
+.menu-carte__conteneur h4 {
+  text-align: center;
+  margin-top: 32px;
+  margin-bottom: 0;
+  font-size: 1.2em;
+}
+.menu-carte__conteneur div {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+.menu-carte__conteneur div p:nth-child(1) {
+  padding-right: 20px;
+  margin: 10px 0 10px 0;
+}
+.menu-carte__conteneur div p:nth-child(2) {
+  font-weight: bold;
+  margin: 10px 0 10px 0;
+}
+
+.menu-carte__plat {
+  align-items: center;
+}
+.menu-carte__plat h4 {
+  width: 100%;
+}
+.menu-carte__plat img {
+  width: 30%;
+  margin-top: 32px;
+}
+
+/*# sourceMappingURL=style.css.map */
