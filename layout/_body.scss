@@ -8,4 +8,7 @@ body{
     margin: auto;
     max-width: 900px;
     @include shadow;
+    @include mobile-tablette{
+        width: 100%;
+    }
 }

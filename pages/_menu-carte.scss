@@ -8,9 +8,15 @@
 
 .menu-carte{
     margin: 20px 5% 20px 5%;
-    padding: 40px;
+    padding: 40px 40px 80px 40px;
     @include carte ($enseignes);
     @include shadow;
+    @include mobile-only{
+        padding: 10px 10px 50px 10px;
+    }
+    &--note{
+        padding-top: 80px;
+    }
 }
 
 .menu-carte__titre{
@@ -104,6 +110,16 @@
                 font-weight: 500;
             }
         }
+        @include mobile-only{
+            div{
+                p:nth-child(1){
+                    margin-top: 10px;
+                }
+                p:nth-child(2){
+                    margin-top: 10px;
+                }
+            }
+        }
     }
 }
 
@@ -121,15 +137,27 @@
     &--chic{
         padding-left: 50px;
         padding-right: 50px;
+        @include mobile-only{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
 
     &--delice{
         padding-left: 50px;
         padding-right: 50px;
+        @include mobile-only{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
     &--palette{
         padding-left: 40px;
         padding-right: 40px;
+        @include mobile-only{
+            padding-left: 10px;
+            padding-right: 10px;
+        }
     }
 }
 
@@ -176,7 +204,10 @@
     font-size: 1.9em;
     font-weight: 200;
     img {
-        margin: 0 10px 0 0;
+        margin: 1em 10px 0 0;
         height: 50px;
+    }
+    h3 {
+        margin-bottom: 0px;
     }
 }

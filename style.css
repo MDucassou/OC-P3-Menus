@@ -85,6 +85,11 @@ body {
   max-width: 900px;
   box-shadow: 0 0 10px #c8c8c8;
 }
+@media screen and (max-width: 900px) {
+  body {
+    width: 100%;
+  }
+}
 
 .main-footer {
   display: flex;
@@ -107,6 +112,12 @@ body {
 .accueil-prev__ligne {
   display: flex;
   justify-content: space-evenly;
+}
+@media screen and (max-width: 600px) {
+  .accueil-prev__ligne {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .accueil-prev__carte {
@@ -135,6 +146,11 @@ body {
 }
 .accueil-prev__carte--palette {
   background-color: #fdfffd;
+}
+@media screen and (max-width: 600px) {
+  .accueil-prev__carte {
+    width: 90%;
+  }
 }
 
 .accueil-prev__titre {
@@ -219,7 +235,7 @@ body {
 
 .menu-carte {
   margin: 20px 5% 20px 5%;
-  padding: 40px;
+  padding: 40px 40px 80px 40px;
   box-shadow: 0 0 10px #c8c8c8;
 }
 .menu-carte--note {
@@ -233,6 +249,14 @@ body {
 }
 .menu-carte--palette {
   background-color: #fdfffd;
+}
+@media screen and (max-width: 600px) {
+  .menu-carte {
+    padding: 10px 10px 50px 10px;
+  }
+}
+.menu-carte--note {
+  padding-top: 80px;
 }
 
 .menu-carte__titre {
@@ -357,6 +381,14 @@ body {
   font-size: 1.4em;
   font-weight: 500;
 }
+@media screen and (max-width: 600px) {
+  .menu-carte__conteneur--palette div p:nth-child(1) {
+    margin-top: 10px;
+  }
+  .menu-carte__conteneur--palette div p:nth-child(2) {
+    margin-top: 10px;
+  }
+}
 
 .plat-liste {
   display: flex;
@@ -374,13 +406,31 @@ body {
   padding-left: 50px;
   padding-right: 50px;
 }
+@media screen and (max-width: 600px) {
+  .plat-liste--chic {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 .plat-liste--delice {
   padding-left: 50px;
   padding-right: 50px;
 }
+@media screen and (max-width: 600px) {
+  .plat-liste--delice {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
 .plat-liste--palette {
   padding-left: 40px;
   padding-right: 40px;
+}
+@media screen and (max-width: 600px) {
+  .plat-liste--palette {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .menu-dessert_conteneur--chic {
@@ -443,8 +493,11 @@ body {
   -webkit-text-fill-color: transparent;
 }
 .enseigne-footer img {
-  margin: 0 10px 0 0;
+  margin: 1em 10px 0 0;
   height: 50px;
+}
+.enseigne-footer h3 {
+  margin-bottom: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
