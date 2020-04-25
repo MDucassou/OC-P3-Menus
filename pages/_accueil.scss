@@ -21,74 +21,38 @@
     &:hover{
         cursor: pointer;
     }
+    @include carte ($enseignes);
 }
 
-.accueil-prev__carte--menu1{
-    background-color: $menu1-color__fond;
-    h2{
-        font-size: 1.7em;
-        font-family: $menu1-font__titre;
-        font-weight: 500;
-        @include gradient ($menu1-gradient__angle, $menu1-color__texte1, $menu1-color__texte2);
-    }
-    p{
-        font-size: 2em;
-        font-family: $menu1-font__texte;
-        color: $menu1-color__texte1;
-        text-transform: uppercase;
-        font-weight: 700;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-}
-
-.accueil-prev__carte--menu2{
-    background-color: $menu2-color__fond;
-    h2{
+.accueil-prev__titre{
+    font-size: 1.5em;       
+    font-weight: 500;
+    @include titre ($enseignes);
+    &--chic{
         font-size: 1.2em;
-        font-family: $menu2-font__titre;
-        @include gradient ($menu2-gradient__angle, $menu2-color__texte1, $menu2-color__texte2);
     }
-    p{
-        font-size: 2em;
-        font-family: $menu2-font__texte;
-        color: $menu2-color__texte1;
-        font-weight: 700;
-        margin-top: 10px;
-        margin-bottom: 10px;
+    
+}
+
+
+.accueil-prev__texte{
+    @include texte ($enseignes);
+    font-size: 1.7em;
+    font-weight: 700;
+    margin: 0px;
+    &--note{
+        text-transform: uppercase;
+    }
+    &--delice{
+        color: $color__texte-menu--delice;
+    }
+    &--palette{
+        color: $color__texte-menu--palette;
     }
 }
 
-.accueil-prev__carte--menu3{
-    background-color: $menu3-color__fond;
-    h2{
-        font-size: 1.5em;
-        font-family: $menu3-font__titre;
-        @include gradient ($menu3-gradient__angle, $menu3-color__texte1, $menu3-color__texte2);
-    }
-    p{
-        font-size: 2em;
-        font-family: $menu3-font__texte;
-        color: $menu3-color__texte2;
-        font-weight: 700;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-}
-
-.accueil-prev__carte--menu4{
-    background-color: $menu4-color__fond;
-    h2{
-        font-size: 1.4em;
-        font-family: $menu4-font__titre;
-        @include gradient ($menu4-gradient__angle, $menu4-color__texte1, $menu4-color__texte2);
-    }
-    p{
-        font-size: 2em;
-        font-family: $menu4-font__texte;
-        color: $menu4-color__texte1;
-        font-weight: 700;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
+.accueil__image--note{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }

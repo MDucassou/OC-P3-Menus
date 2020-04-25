@@ -1,65 +1,156 @@
+
 .menu-carte__header{
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    font-size: 2em;
 }
 
 .menu-carte{
     margin: 20px 5% 20px 5%;
     padding: 40px;
-    footer{
-        text-align: center;
-    }
-}
-
-.menu-carte--menu1{
-    font-family: $menu1-font__texte;
-    color: $menu1-color__texte1;
-    background-color: $menu1-color__fond;
-    footer{
-        h3{
-            font-family: $menu1-font__titre;
-            font-weight: 500;
-            font-size: 1.5em;
-        }
-    }
+    @include carte ($enseignes);
+    @include shadow;
 }
 
 .menu-carte__titre{
-    h3{
-        text-align: center;
-        font-family: $menu1-font__titre;
-        font-size: 2em;
-        font-weight: 500;
-        margin:0;
+    @include titre ($enseignes);
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 2.7em;
+    font-weight: 500;
+    &--note{
+        margin: 0;
+    }
+    &--chic{
+        font-size: 1.9em;
+    }
+    &--delice{
+        font-size: 3.5em;
+    }
+    &--palette{
+        font-size: 3.5em;
     }
 }
 
+
 .menu-carte__conteneur{
+    @include texte ($enseignes);
     h4{
         text-align: center;
         margin-top: 32px;
         margin-bottom: 0;
-        font-size: 1.2em;
+        font-size: 1.4em;
+
     }
     div{
         display: flex;
         justify-content: space-between;
-        margin: 0;
+        align-items: center;
+        text-align: left;
+        font-size: 0.7em;
         p:nth-child(1){
+            width: 100%;
+            text-align: left;
             padding-right: 20px;
-            margin: 10px 0 10px 0;
+            margin: 10px 0 0px 0;
         }
         p:nth-child(2){
+            text-align: right;
             font-weight: bold;
-            margin: 10px 0 10px 0;
+            margin: 10px 0 0px 0;
         }
-        
+    }
+    &--note{
+        font-size:1.2em;
     }
     
+    
+    
+    &--chic{
+        font-size: 1.1em;
+        font-weight: 400;
+    }
+
+    &--delice{
+        color:$color__texte3--delice;
+        font-size: 1em;
+        font-weight: 500;
+        h4{
+            font-weight: 500;
+        }
+        div{
+            p:nth-child(2){
+                margin:0 0 10px 0;
+                font-size: 1.2em;
+                font-weight: bold;
+            }
+            p:nth-child(1){
+                margin:0 0 10px 0;
+                padding:0;
+            }
+        }
+    }
+
+    &--palette{
+        color:$color__texte3--palette;
+        div{
+            p:nth-child(1){
+                margin-top: 0;
+            }
+            p:nth-child(2){
+                margin-top: 0;
+                font-size: 1.4em;
+                font-weight: 500;
+            }
+        }
+    }
 }
+
+.plat-liste{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+    div{
+        font-size: 1.1em;
+        width: 100%;
+    }
+    &--chic{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    &--delice{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    &--palette{
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+
+
+.menu-dessert_conteneur{
+    &--chic{
+        color: $color__texte2--chic;
+    }
+}
+
+.menu-plat_conteneur{
+    &--chic{
+        color: $color__texte3--chic;
+    }
+}
+
 
 .menu-carte__plat{
     align-items: center;
+    margin-bottom: 20px;
     h4{
         width:100%;
     }
@@ -67,5 +158,25 @@
     img{
         width: 30%;
         margin-top: 32px;
+    }
+    &--note{
+        margin: 20px 0 10px 0;
+
+    }
+}
+
+
+
+.enseigne-footer{
+    @include titre($enseignes);
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.9em;
+    font-weight: 200;
+    img {
+        margin: 0 10px 0 0;
+        height: 50px;
     }
 }

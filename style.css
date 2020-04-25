@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "montserrat";
   src: url("fonts/Montserrat/Montserrat-bold.ttf") format("ttf");
@@ -30,12 +31,12 @@
   font-family: "kaushan";
   src: url("fonts/Kaushan-Script-FontZillion/kaushanscript-regular.ttf");
 }
-/*enseigne*/
+/*valeurs des La note enchantée*/
+/*valeurs des Le chic à la française*/
+/*valeurs des Le délice des papilles*/
+/*valeurs des La palette du goût*/
+/*Oh My Food*/
 /*polices*/
-/*menu1*/
-/*menu2*/
-/*menu3*/
-/*menu4*/
 a {
   text-decoration: none;
 }
@@ -81,6 +82,7 @@ body {
   background-color: white;
   width: 70%;
   margin: auto;
+  max-width: 900px;
   box-shadow: 0 0 10px #c8c8c8;
 }
 
@@ -122,143 +124,276 @@ body {
 .accueil-prev__carte:hover {
   cursor: pointer;
 }
-
-.accueil-prev__carte--menu1 {
+.accueil-prev__carte--note {
   background-color: #fcdeda;
 }
-.accueil-prev__carte--menu1 h2 {
-  font-size: 1.7em;
-  font-family: "devonshire";
+.accueil-prev__carte--chic {
+  background-color: #fff5fe;
+}
+.accueil-prev__carte--delice {
+  background-color: #f9f9f9;
+}
+.accueil-prev__carte--palette {
+  background-color: #fdfffd;
+}
+
+.accueil-prev__titre {
+  font-size: 1.5em;
   font-weight: 500;
+}
+.accueil-prev__titre--note {
+  font-family: "devonshire";
   background: -webkit-linear-gradient(0deg, #3d1318, #3d1318);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.accueil-prev__carte--menu1 p {
-  font-size: 2em;
-  font-family: "segoe";
-  color: #3d1318;
-  text-transform: uppercase;
-  font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.accueil-prev__carte--menu2 {
-  background-color: #fff5fe;
-}
-.accueil-prev__carte--menu2 h2 {
-  font-size: 1.2em;
+.accueil-prev__titre--chic {
   font-family: "croissant";
   background: -webkit-linear-gradient(290deg, #c67411, #8f5afe);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.accueil-prev__carte--menu2 p {
-  font-size: 2em;
+.accueil-prev__titre--delice {
+  font-family: "dancing";
+  background: -webkit-linear-gradient(0deg, #0128dd, #5caefa);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.accueil-prev__titre--palette {
+  font-family: "kaushan";
+  background: -webkit-linear-gradient(0deg, #3d9239, #beff7f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.accueil-prev__titre--chic {
+  font-size: 1.2em;
+}
+
+.accueil-prev__texte {
+  font-size: 1.7em;
+  font-weight: 700;
+  margin: 0px;
+}
+.accueil-prev__texte--note {
+  font-family: "segoe";
+  color: #3d1318;
+}
+.accueil-prev__texte--chic {
   font-family: "schola";
   color: #c67411;
-  font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
-
-.accueil-prev__carte--menu3 {
-  background-color: #fff5fe;
-}
-.accueil-prev__carte--menu3 h2 {
-  font-size: 1.5em;
-  font-family: "dancing";
-  background: -webkit-linear-gradient(290deg, #0128dd, #5caefa);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.accueil-prev__carte--menu3 p {
-  font-size: 2em;
+.accueil-prev__texte--delice {
   font-family: "segoe";
-  color: #5caefa;
-  font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 10px;
+  color: #0128dd;
 }
-
-.accueil-prev__carte--menu4 {
-  background-color: #f9f9f9;
-}
-.accueil-prev__carte--menu4 h2 {
-  font-size: 1.4em;
-  font-family: "kaushan";
-  background: -webkit-linear-gradient(290deg, #3d9239, #daffb5);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.accueil-prev__carte--menu4 p {
-  font-size: 2em;
+.accueil-prev__texte--palette {
   font-family: "segoe";
   color: #3d9239;
-  font-weight: 700;
-  margin-top: 10px;
-  margin-bottom: 10px;
+}
+.accueil-prev__texte--note {
+  text-transform: uppercase;
+}
+.accueil-prev__texte--delice {
+  color: #0787fb;
+}
+.accueil-prev__texte--palette {
+  color: #72bf55;
+}
+
+.accueil__image--note {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .menu-carte__header {
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
+  margin-top: 40px;
+  font-size: 2em;
 }
 
 .menu-carte {
   margin: 20px 5% 20px 5%;
   padding: 40px;
+  box-shadow: 0 0 10px #c8c8c8;
 }
-.menu-carte footer {
-  text-align: center;
-}
-
-.menu-carte--menu1 {
-  font-family: "segoe";
-  color: #3d1318;
+.menu-carte--note {
   background-color: #fcdeda;
 }
-.menu-carte--menu1 footer h3 {
-  font-family: "devonshire";
-  font-weight: 500;
-  font-size: 1.5em;
+.menu-carte--chic {
+  background-color: #fff5fe;
+}
+.menu-carte--delice {
+  background-color: #f9f9f9;
+}
+.menu-carte--palette {
+  background-color: #fdfffd;
 }
 
-.menu-carte__titre h3 {
+.menu-carte__titre {
+  margin-bottom: 30px;
   text-align: center;
-  font-family: "devonshire";
-  font-size: 2em;
+  font-size: 2.7em;
   font-weight: 500;
+}
+.menu-carte__titre--note {
+  font-family: "devonshire";
+  background: -webkit-linear-gradient(0deg, #3d1318, #3d1318);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-carte__titre--chic {
+  font-family: "croissant";
+  background: -webkit-linear-gradient(290deg, #c67411, #8f5afe);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-carte__titre--delice {
+  font-family: "dancing";
+  background: -webkit-linear-gradient(0deg, #0128dd, #5caefa);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-carte__titre--palette {
+  font-family: "kaushan";
+  background: -webkit-linear-gradient(0deg, #3d9239, #beff7f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.menu-carte__titre--note {
   margin: 0;
 }
+.menu-carte__titre--chic {
+  font-size: 1.9em;
+}
+.menu-carte__titre--delice {
+  font-size: 3.5em;
+}
+.menu-carte__titre--palette {
+  font-size: 3.5em;
+}
 
+.menu-carte__conteneur--note {
+  font-family: "segoe";
+  color: #3d1318;
+}
+.menu-carte__conteneur--chic {
+  font-family: "schola";
+  color: #c67411;
+}
+.menu-carte__conteneur--delice {
+  font-family: "segoe";
+  color: #0128dd;
+}
+.menu-carte__conteneur--palette {
+  font-family: "segoe";
+  color: #3d9239;
+}
 .menu-carte__conteneur h4 {
   text-align: center;
   margin-top: 32px;
   margin-bottom: 0;
-  font-size: 1.2em;
+  font-size: 1.4em;
 }
 .menu-carte__conteneur div {
   display: flex;
   justify-content: space-between;
-  margin: 0;
+  align-items: center;
+  text-align: left;
+  font-size: 0.7em;
 }
 .menu-carte__conteneur div p:nth-child(1) {
+  width: 100%;
+  text-align: left;
   padding-right: 20px;
-  margin: 10px 0 10px 0;
+  margin: 10px 0 0px 0;
 }
 .menu-carte__conteneur div p:nth-child(2) {
+  text-align: right;
   font-weight: bold;
-  margin: 10px 0 10px 0;
+  margin: 10px 0 0px 0;
+}
+.menu-carte__conteneur--note {
+  font-size: 1.2em;
+}
+.menu-carte__conteneur--chic {
+  font-size: 1.1em;
+  font-weight: 400;
+}
+.menu-carte__conteneur--delice {
+  color: black;
+  font-size: 1em;
+  font-weight: 500;
+}
+.menu-carte__conteneur--delice h4 {
+  font-weight: 500;
+}
+.menu-carte__conteneur--delice div p:nth-child(2) {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.menu-carte__conteneur--delice div p:nth-child(1) {
+  margin: 0 0 10px 0;
+  padding: 0;
+}
+.menu-carte__conteneur--palette {
+  color: black;
+}
+.menu-carte__conteneur--palette div p:nth-child(1) {
+  margin-top: 0;
+}
+.menu-carte__conteneur--palette div p:nth-child(2) {
+  margin-top: 0;
+  font-size: 1.4em;
+  font-weight: 500;
+}
+
+.plat-liste {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.plat-liste div {
+  font-size: 1.1em;
+  width: 100%;
+}
+.plat-liste--chic {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.plat-liste--delice {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.plat-liste--palette {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.menu-dessert_conteneur--chic {
+  color: #8f5afe;
+}
+
+.menu-plat_conteneur--chic {
+  color: #a56798;
 }
 
 .menu-carte__plat {
   align-items: center;
+  margin-bottom: 20px;
 }
 .menu-carte__plat h4 {
   width: 100%;
@@ -266,6 +401,50 @@ body {
 .menu-carte__plat img {
   width: 30%;
   margin-top: 32px;
+}
+.menu-carte__plat--note {
+  margin: 20px 0 10px 0;
+}
+
+.enseigne-footer {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.9em;
+  font-weight: 200;
+}
+.enseigne-footer--note {
+  font-family: "devonshire";
+  background: -webkit-linear-gradient(0deg, #3d1318, #3d1318);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.enseigne-footer--chic {
+  font-family: "croissant";
+  background: -webkit-linear-gradient(290deg, #c67411, #8f5afe);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.enseigne-footer--delice {
+  font-family: "dancing";
+  background: -webkit-linear-gradient(0deg, #0128dd, #5caefa);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.enseigne-footer--palette {
+  font-family: "kaushan";
+  background: -webkit-linear-gradient(0deg, #3d9239, #beff7f);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.enseigne-footer img {
+  margin: 0 10px 0 0;
+  height: 50px;
 }
 
 /*# sourceMappingURL=style.css.map */

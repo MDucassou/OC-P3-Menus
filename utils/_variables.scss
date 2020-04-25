@@ -30,44 +30,86 @@
     font-family: 'kaushan';
     src: url("fonts/Kaushan-Script-FontZillion/kaushanscript-regular.ttf");
 }
+/*valeurs des La note enchantée*/
+$color__fond--note: #fcdeda;
+$color__texte1--note: #3d1318;
+$color__texte2--note: #3d1318;
+$font__titre--note: 'devonshire';
+$font__texte--note: 'segoe';
+$gradient__angle--note: 0deg;
+
+/*valeurs des Le chic à la française*/
+$color__fond--chic: #fff5fe;
+$color__texte1--chic: #c67411;
+$color__texte2--chic: #8f5afe;
+$color__texte3--chic: #a56798;
+$font__titre--chic: 'croissant';
+$font__texte--chic: 'schola';
+$gradient__angle--chic: 290deg;
+
+/*valeurs des Le délice des papilles*/
+$color__fond--delice: #f9f9f9;
+$color__texte1--delice: #0128dd;
+$color__texte2--delice: #5caefa;
+$color__texte-menu--delice: #0787fb;
+$color__texte3--delice: black;
+$font__titre--delice: 'dancing';
+$font__texte--delice: 'segoe';
+$gradient__angle--delice: 0deg;
+
+/*valeurs des La palette du goût*/
+$color__fond--palette: #fdfffd;
+$color__texte1--palette: #3d9239;
+$color__texte2--palette: #beff7f;
+$color__texte-menu--palette: #72bf55;
+$color__texte3--palette: black;
+$font__titre--palette: 'kaushan';
+$font__texte--palette: 'segoe';
+$gradient__angle--palette: 0deg;
 
 
-
-/*enseigne*/
+/*Oh My Food*/
 $enseigne-color__fond: #569c87;
 $enseigne-color__texte: #fdca45;
 $enseigne-font__titre: Arial;
 $enseigne-font__texte: Arial, Sans;
 /*polices*/
 
-/*menu1*/
-$menu1-color__fond: #fcdeda;
-$menu1-color__texte1: #3d1318;
-$menu1-color__texte2: #3d1318;
-$menu1-font__titre: 'devonshire';
-$menu1-font__texte: 'segoe';
-$menu1-gradient__angle: 0deg;
+$enseignes: (
+    note: (
+        color__fond: $color__fond--note,
+        color__texte1: $color__texte1--note,
+        color__texte2: $color__texte2--note,
+        font__titre: $font__titre--note,
+        font__texte: $font__texte--note,
+        gradient__angle: $gradient__angle--note,
+    ),
 
-/*menu2*/
-$menu2-color__fond: #fff5fe;
-$menu2-color__texte1: #c67411;
-$menu2-color__texte2: #8f5afe;
-$menu2-font__titre: 'croissant';
-$menu2-font__texte: 'schola';
-$menu2-gradient__angle: 290deg;
+    chic: (
+        color__fond: $color__fond--chic,
+        color__texte1: $color__texte1--chic,
+        color__texte2: $color__texte2--chic,
+        font__titre: $font__titre--chic,
+        font__texte: $font__texte--chic,
+        gradient__angle: $gradient__angle--chic,
+    ),
 
-/*menu3*/
-$menu3-color__fond: #fff5fe;
-$menu3-color__texte1: #0128dd;
-$menu3-color__texte2: #5caefa;
-$menu3-font__titre: 'dancing';
-$menu3-font__texte: 'segoe';
-$menu3-gradient__angle: 290deg;
+    delice: (
+        color__fond: $color__fond--delice,
+        color__texte1: $color__texte1--delice,
+        color__texte2: $color__texte2--delice,
+        font__titre: $font__titre--delice,
+        font__texte: $font__texte--delice,
+        gradient__angle: $gradient__angle--delice,
+    ),
 
-/*menu4*/
-$menu4-color__fond: #f9f9f9;
-$menu4-color__texte1: #3d9239;
-$menu4-color__texte2: #daffb5;
-$menu4-font__titre: 'kaushan';
-$menu4-font__texte: 'segoe';
-$menu4-gradient__angle: 290deg;
+    palette: (
+        color__fond: $color__fond--palette,
+        color__texte1: $color__texte1--palette,
+        color__texte2: $color__texte2--palette,
+        font__titre: $font__titre--palette,
+        font__texte: $font__texte--palette,
+        gradient__angle: $gradient__angle--palette,
+    )
+);
+
