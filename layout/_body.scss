@@ -1,12 +1,13 @@
 html{
     background-color: #eaeaea;
+
 }
 
 body{
     background-color: white;
     width: 70%;
     margin: auto;
-    max-width: 900px;
+    padding-bottom: 100px;
     @include shadow;
     @include mobile-tablette{
         width: 100%;

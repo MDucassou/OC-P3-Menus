@@ -3,7 +3,11 @@
     src: url('fonts/Montserrat/Montserrat-bold.ttf') format('ttf');
 }
 @font-face{
-    font-family:'roboto';
+    font-family: 'trueno';
+    src: url('fonts\Trueno-FontZillion\truenosbd.otf') format('ttf');
+}
+@font-face{
+    font-family: 'roboto';
     src: url('fonts/Roboto/Roboto-Regular.ttf') format('ttf');
 }
 @font-face{
@@ -33,7 +37,6 @@
 /*valeurs des La note enchantée*/
 $color__fond--note: #fcdeda;
 $color__texte1--note: #3d1318;
-$color__texte2--note: #3d1318;
 $font__titre--note: 'devonshire';
 $font__texte--note: 'segoe';
 $gradient__angle--note: 0deg;
@@ -51,8 +54,8 @@ $gradient__angle--chic: 290deg;
 $color__fond--delice: #f9f9f9;
 $color__texte1--delice: #0128dd;
 $color__texte2--delice: #5caefa;
-$color__texte-menu--delice: #0787fb;
-$color__texte3--delice: black;
+$color__texte3--delice: #0787fb;
+$color__texte-menu--delice: black;
 $font__titre--delice: 'dancing';
 $font__texte--delice: 'segoe';
 $gradient__angle--delice: 0deg;
@@ -61,8 +64,8 @@ $gradient__angle--delice: 0deg;
 $color__fond--palette: #fdfffd;
 $color__texte1--palette: #3d9239;
 $color__texte2--palette: #beff7f;
-$color__texte-menu--palette: #72bf55;
-$color__texte3--palette: black;
+$color__texte3--palette: #72bf55;
+$color__texte-menu--palette: black;
 $font__titre--palette: 'kaushan';
 $font__texte--palette: 'segoe';
 $gradient__angle--palette: 0deg;
@@ -71,15 +74,17 @@ $gradient__angle--palette: 0deg;
 /*Oh My Food*/
 $enseigne-color__fond: #569c87;
 $enseigne-color__texte: #fdca45;
-$enseigne-font__titre: Arial;
-$enseigne-font__texte: Arial, Sans;
-/*polices*/
+$enseigne-font__titre: 'montserrat', 'Arial';
+$enseigne-font__texte: 'montserrat', 'Arial';
 
+
+/*polices*/
 $enseignes: (
     note: (
         color__fond: $color__fond--note,
-        color__texte1: $color__texte1--note,
-        color__texte2: $color__texte2--note,
+        color__entree: $color__texte1--note,
+        color__dessert: $color__texte1--note,
+        color__plat: $color__texte1--note,
         font__titre: $font__titre--note,
         font__texte: $font__texte--note,
         gradient__angle: $gradient__angle--note,
@@ -87,8 +92,9 @@ $enseignes: (
 
     chic: (
         color__fond: $color__fond--chic,
-        color__texte1: $color__texte1--chic,
-        color__texte2: $color__texte2--chic,
+        color__entree: $color__texte1--chic,
+        color__dessert: $color__texte2--chic,
+        color__plat: $color__texte3--chic,
         font__titre: $font__titre--chic,
         font__texte: $font__texte--chic,
         gradient__angle: $gradient__angle--chic,
@@ -96,8 +102,9 @@ $enseignes: (
 
     delice: (
         color__fond: $color__fond--delice,
-        color__texte1: $color__texte1--delice,
-        color__texte2: $color__texte2--delice,
+        color__entree: $color__texte1--delice,
+        color__dessert: $color__texte2--delice,
+        color__plat: $color__texte3--delice,
         font__titre: $font__titre--delice,
         font__texte: $font__texte--delice,
         gradient__angle: $gradient__angle--delice,
@@ -105,8 +112,9 @@ $enseignes: (
 
     palette: (
         color__fond: $color__fond--palette,
-        color__texte1: $color__texte1--palette,
-        color__texte2: $color__texte2--palette,
+        color__entree: $color__texte1--palette,
+        color__dessert: $color__texte2--palette,
+        color__plat: $color__texte3--palette,
         font__titre: $font__titre--palette,
         font__texte: $font__texte--palette,
         gradient__angle: $gradient__angle--palette,
