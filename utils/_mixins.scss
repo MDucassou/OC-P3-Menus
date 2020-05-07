@@ -2,17 +2,6 @@
     box-shadow: 0 0 10px #c8c8c8;
 }
 
-@mixin gradient ($enseignes) {
-    @each $enseigne, $item in $enseignes{
-        &--#{enseigne}{
-            background: -webkit-linear-gradient(map-get($item, gradient__angle), map-get($item, color__entree), map-get($item, color__dessert));
-            background-clip: text;
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-        }
-    }
-}
-
 @mixin carte ($enseignes) {
     @each $enseigne, $item in $enseignes{
         &--#{$enseigne}{
@@ -26,7 +15,6 @@
         &--#{$enseigne}{
         font-family: map-get($item, font__titre);
         background: -webkit-linear-gradient(map-get($item, gradient__angle), map-get($item, color__entree), map-get($item, color__dessert));
-        /*background-clip: text;*/
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         }

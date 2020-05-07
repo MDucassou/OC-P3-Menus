@@ -24,11 +24,9 @@
     0%{
         transform: scaleX(0);
     }
-    95%{
-        transform: scaleX(1);
-    }
+    
     100%{
-        transform: scaleX(0);
+        transform: scaleX(1);
     }
 }
 

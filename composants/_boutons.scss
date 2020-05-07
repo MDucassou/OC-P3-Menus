@@ -8,7 +8,7 @@
     background-color: $enseigne-color__fond;
     text-align: center;
     color: $enseigne-color__texte;
-    padding: 10px 20px 10px 20px;
+    padding: 10px 30px 10px 30px;
     border-radius: 10px;
     font-family: $enseigne-font__texte;
     font-size: 1.5em;
@@ -18,7 +18,7 @@
     }
     
     p {
-        margin: 20px;
+        margin: 10px;
     }
 }
 
@@ -34,6 +34,7 @@
         border-radius: 50%;
         width: 15px;
         height: 15px;
+        margin-right: 5px;
         animation: points 2s ease-in-out infinite alternate backwards;
         @for $i from 1 through 3{
             &--#{$i}{

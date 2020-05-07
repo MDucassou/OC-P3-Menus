@@ -1,15 +1,12 @@
 @font-face{
     font-family:'montserrat';
-    src: url('fonts/Montserrat/Montserrat-bold.ttf') format('ttf');
+    src: url('fonts/Montserrat/Montserrat-Regular.ttf');
 }
 @font-face{
-    font-family: 'trueno';
-    src: url('fonts\Trueno-FontZillion\truenosbd.otf') format('ttf');
+    font-family:'montserrat-bold';
+    src: url('fonts/Montserrat/Montserrat-Bold.ttf');
 }
-@font-face{
-    font-family: 'roboto';
-    src: url('fonts/Roboto/Roboto-Regular.ttf') format('ttf');
-}
+
 @font-face{
     font-family: 'devonshire';
     src: url("fonts/Devonshire-FontZillion/devonshire-regular.ttf");
@@ -24,7 +21,7 @@
 }
 @font-face{
     font-family: 'dancing';
-    src: url("fonts/Dancing_Script/DancingScript-Regular.ttf");
+    src: url("fonts/Dancing-Script/dancing-script-regular.ttf");
 }
 @font-face{
     font-family: 'segoe';
@@ -51,7 +48,7 @@ $font__texte--chic: 'schola';
 $gradient__angle--chic: 290deg;
 
 /*valeurs des Le délice des papilles*/
-$color__fond--delice: #f9f9f9;
+$color__fond--delice: #edefef;
 $color__texte1--delice: #0128dd;
 $color__texte2--delice: #5caefa;
 $color__texte3--delice: #0787fb;
@@ -74,11 +71,11 @@ $gradient__angle--palette: 0deg;
 /*Oh My Food*/
 $enseigne-color__fond: #569c87;
 $enseigne-color__texte: #fdca45;
-$enseigne-font__titre: 'montserrat', 'Arial';
+$enseigne-font__titre: 'montserrat-bold', 'Arial';
 $enseigne-font__texte: 'montserrat', 'Arial';
 
 
-/*polices*/
+/*Map pour définir les caractéristiques graphiques de chaque restaurant (couleur, font)*/
 $enseignes: (
     note: (
         color__fond: $color__fond--note,
